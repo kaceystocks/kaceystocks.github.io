@@ -5,3 +5,22 @@ body{
     font-family: 'Courier New', Courier, monospace;
 
 }
+
+img {
+    width: 20%;
+}
+
+figcaption{
+    text-align: center;
+    font-style: italic;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+}
