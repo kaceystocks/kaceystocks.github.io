@@ -1,9 +1,19 @@
 body{
-    background-color:aquamarine;
+    background-color: #FFFAE3;
     text-align: center;
     color:black;
     font-family: 'Courier New', Courier, monospace;
+    margin: auto;
 
+}
+
+h2 {
+    text-align: left;
+    border: 2px solid black;
+    display: block;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 60%;
 }
 
 img {
@@ -20,7 +30,21 @@ figcaption{
     font-weight: bold;
 }
 
+main p:nth-of-type(2) {
+    text-align: left;
+    padding-left: 15px;
+}
+
 ul {
-    list-style-type: none;
     text-align: left;
 }
+
+a{
+    text-decoration: none;
+    color: #700A36;
+}
+
+a:hover{
+    color: #1C425E;
+}
+
