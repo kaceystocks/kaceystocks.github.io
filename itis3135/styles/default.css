@@ -1,23 +1,38 @@
+
+
 body{
-    background-color: #FFFAE3;
+    background-color: #e4dfda;
     text-align: center;
-    color:black;
+    color:#11232C;
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
 
 }
 
+header{
+    color: #3A1819;
+    border-bottom: 2px solid #3A1819;
+    padding: 10px;
+    margin: 10px;
+}
+
 h2 {
     text-align: left;
-    border: 2px solid black;
-    display: block;
-    padding: 5px;
-    margin-left: 5px;
-    margin-right: 60%;
+    padding: 10px;
+    color:#3A1819;
+    
+}
+
+
+p{
+    text-align: left;
+    padding: 10px;
+    color:#11232C;
 }
 
 img {
-    width: 20%;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 figcaption{
@@ -44,7 +59,25 @@ a{
     color: #700A36;
 }
 
+p a:nth-child(1){
+    text-decoration: underline;
+}
+
+
 a:hover{
-    color: #1C425E;
+    color: #161032;
+}
+
+footer{
+    text-align: center;
+    border: 2px solid #1C425E;
+    padding: 10px;
+    background: linear-gradient(#B6D3E2, #F9C8D6);
+    margin: 10px;
+
+}
+
+footer p {
+    text-align: center;
 }
 
