@@ -11,9 +11,13 @@ body{
 
 header{
     color: #3A1819;
+    background-color: #e4dfda;
     border-bottom: 2px solid #3A1819;
     padding: 10px;
     margin: 10px;
+    position: sticky;
+    top:0;
+
 }
 
 h2 {
@@ -31,8 +35,8 @@ p{
 }
 
 img {
-    max-width: 100px;
-    max-height: 100px;
+    width: 40%;
+    height: 40%;
 }
 
 figcaption{
