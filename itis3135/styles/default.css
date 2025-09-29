@@ -27,12 +27,34 @@ h2 {
     
 }
 
+h3{
+    text-align: left;
+    padding-left:10px;
+    color:#3A1819;
+}
+
+h4{
+    padding-left:10px;
+    color:#3A1819;
+}
+
 
 p{
     text-align: left;
     padding: 10px;
     color:#11232C;
+    margin: 5px;
 }
+
+main section{
+    background-color:#FAF2EF;
+    border: 1px solid #3A1819;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
 
 img {
     width: 40%;
@@ -49,10 +71,7 @@ figcaption{
     font-weight: bold;
 }
 
-main p:nth-of-type(2) {
-    text-align: left;
-    padding-left: 15px;
-}
+
 
 ul {
     text-align: left;
@@ -69,15 +88,16 @@ p a:nth-child(1){
 
 
 a:hover{
-    color: #161032;
+    color: #A8594D;
 }
 
 footer{
     text-align: center;
     border: 2px solid #1C425E;
-    padding: 10px;
+    padding: 20px;
     background: linear-gradient(#B6D3E2, #F9C8D6);
-    margin: 10px;
+    margin: 20px auto;
+    max-width: 800px;
 
 }
 
