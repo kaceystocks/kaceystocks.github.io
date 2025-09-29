@@ -5,7 +5,9 @@ body{
     text-align: center;
     color:#11232C;
     font-family: 'Courier New', Courier, monospace;
-    margin: auto;
+    margin: 0 auto;
+    max-width: 800px;
+    width:80%;
 
 }
 
@@ -42,7 +44,7 @@ h4{
 p{
     text-align: left;
     padding: 10px;
-    color:#11232C;
+    color:#0b3245;
     margin: 5px;
 }
 
@@ -95,13 +97,26 @@ footer{
     text-align: center;
     border: 2px solid #1C425E;
     padding: 20px;
-    background: linear-gradient(#B6D3E2, #F9C8D6);
+    background: linear-gradient(#0b3245, #700A36);
     margin: 20px auto;
     max-width: 800px;
 
 }
 
-footer p {
+footer p{
     text-align: center;
+    color: #D6FCFF;
+    
+}
+footer p a {
+    color: #FBC6D8;
+}
+
+footer nav a{
+    color: #FBC6D8;
+}
+
+footer nav{
+    color: #D6FCFF;
 }
 
