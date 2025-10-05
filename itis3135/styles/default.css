@@ -16,7 +16,7 @@ header{
     background-color: #e4dfda;
     border-bottom: 2px solid #3A1819;
     padding: 10px;
-    margin: 10px;
+    margin: 0 auto;
     position: sticky;
     top:0;
 
@@ -77,6 +77,7 @@ figcaption{
 
 ul {
     text-align: left;
+    
 }
 
 a{
@@ -94,14 +95,14 @@ a:hover{
 }
 
 footer{
-    text-align: center;
     border: 2px solid #1C425E;
-    padding: 20px;
     background: linear-gradient(#0b3245, #700A36);
-    margin: 20px auto;
     max-width: 800px;
+    padding: 20px;
+    margin: 20px auto;
 
 }
+
 
 footer p{
     text-align: center;
@@ -117,6 +118,36 @@ footer nav a{
 }
 
 footer nav{
+    text-align: center;
     color: #D6FCFF;
 }
+
+table{
+    text-align: left;
+    color:#FBC6D8;
+    padding: 5px;
+   
+    
+}
+
+
+th, td{
+    padding: 10px;
+}
+
+td:nth-of-type(2){
+    text-align: center;
+}
+
+thead{
+    background-color:#0b3245;
+    color:#FBC6D8;
+
+}
+
+td{
+    background-color: #700A36;
+}
+
+
 
