@@ -10,6 +10,29 @@ body{
     width:80%;
 
 }
+/*Large screens*/
+@media (max-width: 1200px) {
+    main {
+        width: 95%;
+    margin: 0 auto;
+    }
+}
+
+/*Medium screens*/
+@media (max-width: 768px){
+    body{
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+/*Small Screens*/
+@media (max-width: 480px) {
+    body{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
 
 header{
     color: #3A1819;
