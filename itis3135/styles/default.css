@@ -58,10 +58,6 @@ h3{
     color:#3A1819;
 }
 
-h4{
-    padding-left:10px;
-    color:#3A1819;
-}
 
 
 p{
@@ -91,12 +87,6 @@ figcaption{
     font-style: italic;
 
 }
-
-.bold {
-    font-weight: bold;
-}
-
-
 
 ul {
     text-align: left;
@@ -149,7 +139,6 @@ table{
     text-align: left;
     color:#FBC6D8;
     padding: 5px;
-   
     
 }
 
