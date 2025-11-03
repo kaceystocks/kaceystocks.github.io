@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kacey Stocks Knowledgable Seal || ITIS3135 || Introduction Form</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Introduction Form</h2>
+        <section>
+            <h3>Please submit the form below.</h3>
+
+            <form id="form">
+                <fieldset>
+                    <legend>Name Information</legend>
+                    <!--first name-->
+                    <label for="firstName">First Name: </label>
+                    <input 
+                        id ="firstName" 
+                        type="text" 
+                        name="firstName" 
+                        placeholder="First name here" 
+                        value="Kacey"
+                        required
+                    />
+                    <!--middle initial-->
+                    <label for="middleInitial">Middle Initial: </label>
+                    <input 
+                        id ="middleInitial" 
+                        type="text" 
+                        name="middleInitial" 
+                        placeholder="Middle initial here" 
+                        value="A"
+                        required
+                    />
+                    <!--last name-->
+                    <label for="lastName">Last Name: </label>
+                    <input 
+                        id ="lastName" 
+                        type="text" 
+                        name="lastName" 
+                        placeholder="Last name here" 
+                        value="Stocks"
+                        required
+                    />
+
+                    <!--preferred name-->
+                    <label for="preferredName">Preferred Name: </label>
+                    <input 
+                        id ="preferredName" 
+                        type="text" 
+                        name="preferredName" 
+                        placeholder="Preferred name optional" 
+                    />
+
+                    <!--mascot name - adjective and animal-->
+                    <label for="mascotAdjective">Mascot Adjective: </label>
+                    <input 
+                        id="mascotAdjective"
+                        type="text"
+                        name="mascotAdjective"
+                        placeholder="Mascot Adjective"
+                        value="Knowledgable"
+                        required
+                    />
+                    <label for="mascotAnimal">Mascot Animal: </label>
+                    <input 
+                        id="mascotAnimal"
+                        type="text"
+                        name="mascotAnimal"
+                        placeholder="Mascot Animal"
+                        required
+                        value="Seal"
+                    />
+                    <!--divider-->
+                    <label for="divider">Divider: </label>
+                    <input
+                        id="divider"
+                        type="text"
+                        name="divider"
+                        placeholder="Divider here"
+                        value="|"
+                        required
+                    />
+                </fieldset>
+                <!--image and caption
+                make caption italic
+                -->
+                <fieldset>
+                    <legend>Image and Caption</legend>
+                    <label for="image">Upload an Image: </label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                    <div id="uploadImage">
+                        <img src="images/introductionpic.jpg" alt="Kacey Stocks">
+                    </div>
+                    <label for="imageCaption">Add a Caption for Image: </label>
+                    <input type="text" id="imageCaption" name="imageCaption" value="In Swiss Alps" placeholder="Image caption" required/>
+                </fieldset>
+                <!--personal statement-->
+                <fieldset>
+                    <legend>Personal Statement</legend>
+                    <textarea id="personalStatement" placeholder="Personal Statement here" required>I am currently a junior majoring in Computer Science with a concentration in Human-Computer Interaction. I have lived in Concord, North Carolina my whole life and I am a commuter. I am really excited to take this course.
+                    </textarea>
+                </fieldset>
+                <!--5 main bullets-->
+                <fieldset>
+                    <legend>Background</legend>
+                    <!--personal background-->
+                    <label for="personalBackground">Personal Background: </label>
+                    <input
+                        id="personalBackground"
+                        type="text"
+                        name="personalBackground"
+                        placeholder="Personal Background here"
+                        value=" I am from Concord, NC."
+                        required
+                    />
+                    <!--professional background-->
+                    <label for="professionalBackground">Professional Background: </label>
+                    <input
+                        id="professionalBackground"
+                        type="text"
+                        name="professionalBackground"
+                        placeholder="Professional Background here"
+                        value=" I've been working at Great Wolf Lodge for ten months."
+                        required
+                    />
+                    <!--academic background-->
+                    <label for="academicBackground">Academic Background: </label>
+                    <input
+                        id="academicBackground"
+                        type="text"
+                        name="academicBackground"
+                        placeholder="Academic Background here"
+                        value=" I am a junior at UNC Charlotte, majoring in computer science."
+                        required
+                    />
+                    <!--primaryComputer-->
+                    <label for="primaryComputer">Primary Computer: </label>
+                    <input
+                        id="primaryComputer"
+                        type="text"
+                        name="primaryComputer"
+                        placeholder="Primary Computer here"
+                        value=" MacBook Pro M2"
+                        required
+                    />
+                </fieldset>
+                <!--courses taking
+                go back and add placeholders
+                -->
+                <fieldset id="courses-fieldset">
+                    <legend>Courses I'm Taking & Why</legend>
+                        
+                        <!--course 1-->
+                        <fieldset class="course-group">
+                            <label for="dept1" >Department: </label>
+                            <input type="text" id="dept1" class="dept-input"
+                            value="ITIS" placeholder="Department"/>
+                            <label for="num1" >Number: </label>
+                            <input type="text" id="num1" class="num-input"
+                            value="3135" placeholder="Number"/>
+                            <label for="name1" >Name: </label>
+                            <input type="text" id="name1" placeholder="Name" class="name-input"
+                            value="Front-End Web App Development"/>
+                            <label for="reason1" >Reason: </label>
+                            <input type="text" id="reason1" placeholder="Reason" class="reason-input"
+                            value="I am taking this course to strengthen my skills in web design, as I already have some experience."/>
+                            <button onclick=removeCourse(this)>Remove Course</button> <!--add stuff-->
+                        </fieldset>
+                        <!--course 2-->
+                        <fieldset class="course-group">
+                            <label for="dept2" >Department: </label>
+                            <input type="text" id="dept2" class="dept-input"
+                            value="ITIS" placeholder="Department"/>
+                            <label for="num2" >Number: </label>
+                            <input type="text" id="num2" class="num-input"
+                            value="3130" placeholder="Number"/>
+                            <label for="name2" >Name: </label>
+                            <input type="text" id="name2" placeholder="Name" class="name-input"
+                            value="Human-Centered Computing"/>
+                            <label for="reason2" >Reason: </label>
+                            <input type="text" id="reason2" placeholder="Reason" class="reason-input"
+                            value="I will hopefully learn the fundamentals of HCI, which I will use for the rest of my computer science career."/>
+                            <button onclick=removeCourse(this)>Remove Course</button> <!--add stuff-->
+                        </fieldset>
+                        <!--course 3-->
+                        <fieldset class="course-group">
+                            <label for="dept3">Department: </label>
+                            <input type="text" id="dept3" class="dept-input"
+                            value="ITSC" placeholder="Department"/>
+                            <label for="num3" >Number: </label>
+                            <input type="text" id="num3" class="num-input"
+                            value="3688" placeholder="Number"/>
+                            <label for="name3" >Name: </label>
+                            <input type="text" id="name3" placeholder="Name" class="name-input"
+                            value="Computers and Their Impact on Society"/>
+                            <label for="reason3" >Reason: </label>
+                            <input type="text" id="reason3" placeholder="Reason" class="reason-input"
+                            value="I am taking this course to deepen my understanding of how computers impact society."/>
+                            <button onclick=removeCourse(this)>Remove Course</button> <!--add stuff-->
+                        </fieldset>
+                        <!--course 4-->
+                        <fieldset class="course-group">
+                            <label for="dept4" >Department: </label>
+                            <input type="text" id="dept4" class="dept-input"
+                            value="ITIS" placeholder="Department"/>
+                            <label for="num4" >Number: </label>
+                            <input type="text" id="num4" class="num-input"
+                            value="3200" placeholder="Number"/>
+                            <label for="name4" >Name: </label>
+                            <input type="text" id="name4" placeholder="Name" class="name-input"
+                            value="Intro to Info Security & Priv"/>
+                            <label for="reason4" >Reason: </label>
+                            <input type="text" id="reason4" placeholder="Reason" class="reason-input"
+                            value="This course relates to cybersecurity, which I am not interested in, but it is required. I can apply what I learn when I am hopefully working in UX Design.                            "/>
+                            <button onclick=removeCourse(this)>Remove Course</button> <!--add stuff-->
+                        </fieldset>
+                        <!--course 5-->
+                        <fieldset class="course-group">
+                            <label for="dept5" >Department: </label>
+                            <input type="text" id="dept5" class="dept-input"
+                            value="PSYC" placeholder="Department"/>
+                            <label for="num5" >Number: </label>
+                            <input type="text" id="num5" class="num-input"
+                            value="2302" placeholder="Number"/>
+                            <label for="name5" >Name: </label>
+                            <input type="text" id="name5" placeholder="Name" class="name-input"
+                            value="Intro to Positive Psychology"/>
+                            <label for="reason5" >Reason: </label>
+                            <input type="text" id="reason5" placeholder="Reason" class="reason-input"
+                            value="I am taking this course as an elective to learn more about psychology as it relates to my concentration and I am interested in the psychological aspect of digital design as well.                            "/>
+                            <button onclick="removeCourse(this)">Remove Course</button>
+                        </fieldset>
+                    
+                    <button type="button" id="add-course-button">Add Course</button>
+
+                </fieldset>
+                <!--quote-->
+                <fieldset>
+                    <legend>Quote</legend>
+                    <label for="quote">Quote: </label>
+                    <input type="text" id="quote" name="quote" placeholder="Quote here" required value="Wax on, wax off."/>
+                    <label for="author">Author: </label>
+                    <input id="author" type="text" name="author" placeholder="Author here" required value="Mr. Miyagi"/>
+                </fieldset>
+                
+                <!--buttons-->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" id="clear-button" onclick="clearFormFields()">Clear</button>
+                <button type="button" id="generate-json-button">Generate JSON</button>
+                <button type="button" id="generate-html-button">Generate HTML</button>
+
+            </form>
+            
+        </section>
+
+    </main>
+
+    <div data-include="components/footer.html"></div>
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>   
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/introduction.js"></script>
+    <script src="scripts/generate_json.js"></script>
+</body>
+</html>

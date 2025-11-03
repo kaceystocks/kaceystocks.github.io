@@ -12,9 +12,9 @@ body{
 }
 /*Large screens*/
 @media (max-width: 1200px) {
-    main {
+    body {
         width: 95%;
-    margin: 0 auto;
+        margin: 0 auto;
     }
 }
 
@@ -53,7 +53,7 @@ h2 {
 }
 
 h3{
-    text-align: left;
+    text-align: center;
     padding-left:10px;
     color:#3A1819;
 }
@@ -66,6 +66,15 @@ p{
     color:#0b3245;
     margin: 5px;
 }
+
+/*used id quote for two p elements to center the quote & author only*/
+#quote{
+    text-align: center;
+}
+#author{
+    text-align: center;
+}
+
 
 main section{
     background-color:#FAF2EF;
@@ -161,5 +170,15 @@ td{
     background-color: #700A36;
 }
 
+
+input[type=text] {
+    display: block;
+}
+
+/*form styling*/
+fieldset{
+    margin: 30px;
+    
+}
 
 
