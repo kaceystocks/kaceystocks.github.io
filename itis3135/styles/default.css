@@ -180,5 +180,53 @@ fieldset{
     margin: 30px;
     
 }
+#output-section {
+    overflow: auto; 
+    display: flow-root; 
+    max-width: 1000px; 
+    margin: 20px auto; 
+    padding: 20px;
+}
+
+#output-section pre {
+    max-width: 100%; 
+    padding: 0;
+    margin: 0;
+    overflow-x: auto; 
+}
+
+#json-output-section {
+
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 2px solid black; 
+    border-radius: 8px;
+    background-color: #FAF2EF;
+}
 
 
+#json-output-section pre {
+    background-color: #FAF2EF; 
+    color: #0b3245; 
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto; 
+    max-width: 100%;
+}
+
+button{
+    background-color: #FAF2EF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 5px;
+}
+button:hover{
+    background-color: #cba09a;
+}
+.remove-button:hover{
+    background-color: rgb(238, 126, 126);
+}
+#add-course-button:hover{
+    background-color: rgb(160, 241, 160);
+}

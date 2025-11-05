@@ -16,6 +16,7 @@
             <h3>Please submit the form below.</h3>
 
             <form id="form">
+            
                 <fieldset>
                     <legend>Name Information</legend>
                     <!--first name-->
@@ -104,6 +105,7 @@
                 <!--personal statement-->
                 <fieldset>
                     <legend>Personal Statement</legend>
+                    <label for="personalStatement">Personal Statement:</label>
                     <textarea id="personalStatement" placeholder="Personal Statement here" required>I am currently a junior majoring in Computer Science with a concentration in Human-Computer Interaction. I have lived in Concord, North Carolina my whole life and I am a commuter. I am really excited to take this course.
                     </textarea>
                 </fieldset>
@@ -159,6 +161,7 @@
                         
                         <!--course 1-->
                         <fieldset class="course-group">
+                            <legend>Course 1:</legend>
                             <label for="dept1" >Department: </label>
                             <input type="text" id="dept1" class="dept-input"
                             value="ITIS" placeholder="Department"/>
@@ -171,10 +174,11 @@
                             <label for="reason1" >Reason: </label>
                             <input type="text" id="reason1" placeholder="Reason" class="reason-input"
                             value="I am taking this course to strengthen my skills in web design, as I already have some experience."/>
-                            <button onclick=removeCourse(this)>Remove Course</button> <!--add stuff-->
+                            <button class="remove-button" onclick=removeCourse(this)>Remove Course</button> 
                         </fieldset>
                         <!--course 2-->
                         <fieldset class="course-group">
+                            <legend>Course 2:</legend>
                             <label for="dept2" >Department: </label>
                             <input type="text" id="dept2" class="dept-input"
                             value="ITIS" placeholder="Department"/>
@@ -187,10 +191,11 @@
                             <label for="reason2" >Reason: </label>
                             <input type="text" id="reason2" placeholder="Reason" class="reason-input"
                             value="I will hopefully learn the fundamentals of HCI, which I will use for the rest of my computer science career."/>
-                            <button onclick=removeCourse(this)>Remove Course</button> <!--add stuff-->
+                            <button class="remove-button" onclick=removeCourse(this)>Remove Course</button> 
                         </fieldset>
                         <!--course 3-->
                         <fieldset class="course-group">
+                            <legend>Course 3:</legend>
                             <label for="dept3">Department: </label>
                             <input type="text" id="dept3" class="dept-input"
                             value="ITSC" placeholder="Department"/>
@@ -203,10 +208,11 @@
                             <label for="reason3" >Reason: </label>
                             <input type="text" id="reason3" placeholder="Reason" class="reason-input"
                             value="I am taking this course to deepen my understanding of how computers impact society."/>
-                            <button onclick=removeCourse(this)>Remove Course</button> <!--add stuff-->
+                            <button class="remove-button" onclick=removeCourse(this)>Remove Course</button> 
                         </fieldset>
                         <!--course 4-->
                         <fieldset class="course-group">
+                            <legend>Course 4:</legend>
                             <label for="dept4" >Department: </label>
                             <input type="text" id="dept4" class="dept-input"
                             value="ITIS" placeholder="Department"/>
@@ -219,10 +225,11 @@
                             <label for="reason4" >Reason: </label>
                             <input type="text" id="reason4" placeholder="Reason" class="reason-input"
                             value="This course relates to cybersecurity, which I am not interested in, but it is required. I can apply what I learn when I am hopefully working in UX Design.                            "/>
-                            <button onclick=removeCourse(this)>Remove Course</button> <!--add stuff-->
+                            <button class="remove-button" onclick=removeCourse(this)>Remove Course</button> 
                         </fieldset>
                         <!--course 5-->
                         <fieldset class="course-group">
+                            <legend>Course 5:</legend>
                             <label for="dept5" >Department: </label>
                             <input type="text" id="dept5" class="dept-input"
                             value="PSYC" placeholder="Department"/>
@@ -235,7 +242,7 @@
                             <label for="reason5" >Reason: </label>
                             <input type="text" id="reason5" placeholder="Reason" class="reason-input"
                             value="I am taking this course as an elective to learn more about psychology as it relates to my concentration and I am interested in the psychological aspect of digital design as well.                            "/>
-                            <button onclick="removeCourse(this)">Remove Course</button>
+                            <button class="remove-button" onclick="removeCourse(this)">Remove Course</button>
                         </fieldset>
                     
                     <button type="button" id="add-course-button">Add Course</button>
@@ -255,11 +262,13 @@
                 <button type="reset">Reset</button>
                 <button type="button" id="clear-button" onclick="clearFormFields()">Clear</button>
                 <button type="button" id="generate-json-button">Generate JSON</button>
-                <button type="button" id="generate-html-button">Generate HTML</button>
+                <button type="button" id="generate-html-button" onclick="generateAndDisplayHTML()">Generate HTML</button>
 
             </form>
+
             
         </section>
+        
 
     </main>
 
@@ -269,5 +278,6 @@
     <script src="scripts/HTMLInclude.min.js"></script>
     <script src="scripts/introduction.js"></script>
     <script src="scripts/generate_json.js"></script>
+    <script src="scripts/generate_html.js"></script>
 </body>
 </html>
