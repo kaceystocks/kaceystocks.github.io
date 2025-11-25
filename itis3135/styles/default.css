@@ -94,8 +94,9 @@ img {
 }
 
 figcaption{
-    text-align: center;
+    text-align: left;
     font-style: italic;
+    overflow-wrap: break-word;
 
 }
 
