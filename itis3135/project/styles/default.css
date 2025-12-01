@@ -77,6 +77,11 @@ th{
     background-color: #96CEE8;
 }
 
+img{
+    width: 60%;
+    height: 60%;
+}
+
 footer {
     text-align: center;
 }

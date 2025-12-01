@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Basics Interactive || CSS Styling</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/default.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 </head>
 <body>
     <header>
@@ -38,12 +44,22 @@
 
         <section id="selectors-section">
             <h4>Selectors</h4>
+            <div id="demo-box" style="font-size: 16px; margin: 20px; padding: 10px; border: 1px solid #333;">
+                This text's font size changes with the slider.
+            </div>
+            
+            <p>Current Font Size: <span id="font-size-value">16</span>px</p>
+            <div id="font-size-slider" style="width: 80%;"></div>
         </section>
         <section id="declarations-section">
             <h4>Declarations</h4>
         </section>
         <section id="box-model-section">
             <h4>Box Model</h4>
+            <figure>
+                <img src="images/boxmodelpic.jpg" alt="box-model pic" >
+            </figure>
+            
         </section>
 
     </main>
@@ -51,5 +67,6 @@
     <footer>
         <p>By <a href="../kstocksdesigns.com/index.html">K. Stocks Designs</a> © 2025</p>
     </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

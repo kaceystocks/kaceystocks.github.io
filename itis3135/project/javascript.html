@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Basics Interactive || JavaScript Fundamentals</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
@@ -38,14 +39,57 @@
 
         <section id="variables-section">
             <h4>Variables</h4>
+            <p><strong>Declaration Keywords: </strong></p>
+            <ul>
+                <li>var : Older keyword, generally avoided in modern JS due to scoping issues.</li>
+                <li>let : Used when you need to reassign the variable's value later.</li>
+                <li>const : Used for values that should not change after they are set.</li>
+            </ul>
+            <p>Example:</p>
+            <p>let age = 30;</p>
+            <p><strong>Data Types:</strong></p>
+            <ul>
+                <li>String - "Hello World" - Textual data, enclosed in quotes.</li>
+                <li>Number -	10, 3.14, -5 -	Numeric data (integers and floating-point numbers).</li>
+                <li>Boolean -	true or false -	Represents a logical entity (yes/no).</li>
+                <li>Null -	null -	Represents the intentional absence of any object value.</li>
+                <li>Object -	{key: value} -	Used for complex data structures (e.g., arrays, functions, and objects).</li>
+            </ul>
+            <p>Example:</p>
+            <p>const greeting = "Hi";    // String</p>
         </section>
 
         <section id="functions-section">
             <h4>Functions</h4>
+            <p><strong>Defining a function:</strong></p>
+            <p>function greet(name) { return "Hello" + name + "!"; };</p>
+            <p><strong>Function Expression (often assigned to a const variable):</strong></p>
+            <p>const multiply = function(a, b) {
+                return a * b;
+            };</p>
+            <p><strong>Calling a function:</strong></p>
+            <p>let message = greet("Charlie"); // message is now "Hello, Charlie!"</p>
+            <p>let product = multiply(5, 3);   // product is 15</p>
+            
         </section>
 
         <section id="calculator-section">
             <h4>Calculator Lab</h4>
+            <div class="calculator">
+                <label for="num1">Number:</label>
+                <input type="number" id="num1" placeholder=" First number">
+                <label for="operation">Select One:</label>
+                <select id="operation">
+                    <option value="add">Add (+)</option>
+                    <option value="subtract">Subtract (-)</option>
+                </select>
+                <label for="num2">Number:</label>
+                <input type="number" id="num2" placeholder=" Second number">
+                <button onclick="calculateResult()">Calculate</button>
+                <p>Result:</p>
+                <div id="result">0</div>
+
+            </div>
         </section>
 
     </main>
@@ -53,5 +97,7 @@
     <footer>
         <p>By <a href="../kstocksdesigns.com/index.html">K. Stocks Designs</a> © 2025</p>
     </footer>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

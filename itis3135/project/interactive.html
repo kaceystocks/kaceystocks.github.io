@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Basics Interactive || Interactive Project</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
@@ -23,7 +24,14 @@
         <section>
             <h2>Interactive Project</h2>
             <h3>Live Demo: Get a New Quote!</h3>
-            <p>Click the button below. JavaScript will use AJAX to fetch a new motivational quote (or programming tip) from a simulated external source. Watch how the page updates instantly!</p>
+            <p>JavaScript will use AJAX to fetch a new motivational quote (or programming tip) from a simulated external source. Watch how the page updates instantly!</p>
+
+            <div class="quote-box">
+                <h3>Quote Display</h3>
+                <div id="quote-display">Click the button below to load a random quote!</div>
+                <div id="loading" class="loading-indicator"></div>
+                <button id="new-quote-btn" onclick="fetchQuote()">Get New Quote</button>
+            </div>
             
         </section>
 
@@ -32,5 +40,7 @@
     <footer>
         <p>By <a href="../kstocksdesigns.com/index.html">K. Stocks Designs</a> © 2025</p>
     </footer>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

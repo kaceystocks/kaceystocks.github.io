@@ -1,0 +1,17 @@
+[
+    {
+        "content": "The fundamental building block of any website is HTML. Start there!"
+    },
+
+    {
+        "content": "CSS is what makes the web beautiful. It defines the style, color, and layout."
+    },
+
+    {
+        "content": "JavaScript is the glue. It gives your page behavior, logic, and interactivity."
+    },
+
+    {
+        "content": "Always remember to use 'const' before 'let' as a default for variables."
+    }
+]
