@@ -8,23 +8,14 @@
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
-    <header>
-        <h1>JavaScript Fundamentals</h1>
-        <nav>
-            <a href="index.html">Home</a> ||
-            <a href="htmlbasics.html">HTML Basics</a> ||
-            <a href="css.html">CSS Styling</a> ||
-            <a href="javascript.html">JavaScript Fundamentals</a> ||
-            <a href="interactive.html">Interactive Project</a>
-        </nav>
-        <br>
+    <!--put compenent header here-->
+    <div data-include="components/header.html"></div>
         <nav>
             <a href="#variables-section">Variables</a> -
             <a href="#functions-section">Functions</a> -
             <a href="#calculator-section">Calculator Lab</a> 
         </nav>
 
-    </header>
 
     <main>
         <section>
@@ -46,7 +37,7 @@
                 <li>const : Used for values that should not change after they are set.</li>
             </ul>
             <p>Example:</p>
-            <p>let age = 30;</p>
+            <p class="example">let age = 30;</p>
             <p><strong>Data Types:</strong></p>
             <ul>
                 <li>String - "Hello World" - Textual data, enclosed in quotes.</li>
@@ -56,21 +47,21 @@
                 <li>Object -	{key: value} -	Used for complex data structures (e.g., arrays, functions, and objects).</li>
             </ul>
             <p>Example:</p>
-            <p>const greeting = "Hi";    // String</p>
+            <p class="example">const greeting = "Hi";    // String</p>
         </section>
 
         <section id="functions-section">
             <h4>Functions</h4>
             <p><strong>Defining a function:</strong></p>
-            <p>function greet(name) { return "Hello" + name + "!"; };</p>
+            <p class="example">function greet(name) { return "Hello" + name + "!"; };</p>
             <p><strong>Function Expression (often assigned to a const variable):</strong></p>
-            <p>const multiply = function(a, b) {
+            <p class="example">const multiply = function(a, b) {
                 return a * b;
             };</p>
             <p><strong>Calling a function:</strong></p>
-            <p>let message = greet("Charlie"); // message is now "Hello, Charlie!"</p>
-            <p>let product = multiply(5, 3);   // product is 15</p>
-            
+            <p class="example">let message = greet("Charlie"); // message is now "Hello, Charlie!"</p>
+            <p class="example">let product = multiply(5, 3);   // product is 15</p>
+            <p>Think of a calculator's "add" button. You don't write the addition code every time; you just call the built-in add() function.</p>
         </section>
 
         <section id="calculator-section">
@@ -89,14 +80,22 @@
                 <p>Result:</p>
                 <div id="result">0</div>
 
+                <p>How it Works:</p>
+                <ol>
+                    <li><strong>Operation Check:</strong> It checks the value of the operation variable, which will be either the string "add" or "subtract".</li>
+                    <li><strong>Conditional Logic:</strong> It uses an if...else if statement to execute only the correct line of code. If "add", it calculates number1 + number2. If "subtract", it calculates number1 - number2.</li>
+                    <li><strong>Validation:</strong> It usually includes an isNaN() check to ensure the inputs are valid numbers; if not, it prepares an "Error" message instead of a result.</li>
+                </ol>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>By <a href="../kstocksdesigns.com/index.html">K. Stocks Designs</a> © 2025</p>
-    </footer>
+    <!--put component footer here-->
+    <div data-include="components/footer.html"></div>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>   
+    
+    <script src="scripts/HTMLInclude.min.js"></script>
 
     <script src="scripts/scripts.js"></script>
 </body>

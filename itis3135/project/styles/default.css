@@ -18,6 +18,7 @@ main{
 h1{
     color:aliceblue;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 h2{
@@ -28,12 +29,22 @@ h3{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+h4{
+    color: #30212D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 nav{
     color:#69BADD;
+    text-align:center;
 }
 
 p{
     color:#0E0E52;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -44,6 +55,9 @@ footer p{
 ul li{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+ol li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 a{
     color:#69BADD;
@@ -51,6 +65,23 @@ a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+td a{
+    color:#30212D;
+}
+
+td {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+tr{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul{
+    color:#0E0E52;
+}
+ol{
+    color:#0E0E52;
+}
 a:hover{
     color: #D0EAF6;
 }
@@ -82,7 +113,29 @@ img{
     height: 60%;
 }
 
+.example{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    
+}
+button{
+    padding: 5px;
+    background-color: #D0EAF6;
+    color: #0E0E52;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover{
+    color: white;
+    background-color: #0E0E52;
+
+}
+
 footer {
     text-align: center;
+    padding: 20px;
 }
 

@@ -8,22 +8,13 @@
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
-    <header>
-        <h1>HTML Basics</h1>
-        <nav>
-            <a href="index.html">Home</a> ||
-            <a href="htmlbasics.html">HTML Basics</a> ||
-            <a href="css.html">CSS Styling</a> ||
-            <a href="javascript.html">JavaScript Fundamentals</a> ||
-            <a href="interactive.html">Interactive Project</a>
-        </nav>
-<br>
+    <div data-include="components/header.html"></div>
         <nav>
             <a href="#tags-section">Tags</a> -
             <a href="#elements-section">Elements</a> -
             <a href="#attributes-section">Attributes</a> 
         </nav>
-    </header>
+    
 
     <main>
         <section>
@@ -34,25 +25,54 @@
         <p>A tag looks like &lt;p&gt; or &lt;/p&gt; </p>
         <p>An element is the opening tag, the content, and the closing tag (e.g. &lt;p&gt;This is content.&lt;/p&gt;)</p>
         <p>Attributes provide extra information about the element (e.g. &lt;img scr="image.png"/&gt;)</p>
-        <p>Interactive Element</p>
     </section>
+
     <!--tags section-->
     <section id="tags-section">
         <h4>Tags</h4>
+        <p>Tags are the primary way you mark up content in HTML. They are keywords enclosed in angle brackets (&lt; and &gt;).</p>
+        <ul>
+            <li><strong>Structure:</strong> Most tags come in pairs: an opening tag and a closing tag.</li>
+            <li><strong>Purpose:</strong> Tags tell the web browser what kind of content is inside them.</li>
+        </ul>
+        <p class="example">Opening: &lt;h1&gt; Closing: &lt;/h1&gt;</p>
+        <p>The img tag is one of the few self-closing tags. </p>
+        <p class="example">&lt;img&gt;</p>
     </section>
+
     <!--elements section-->
     <section id="elements-section">
         <h4>Elements</h4>
+        <p>An element is the complete unit formed by the opening tag, the closing tag, and all the content in between.</p>
+        <ul>
+            <li><strong>Structure:</strong> Opening Tag + Content + Closing Tag = Element</li>
+            <li><strong>Purpose:</strong> An element defines a specific piece of the document structure (like a complete title, paragraph, or list item).</li>
+        </ul>
+        <p class="example">&lt;p&gt;This is a complete paragraph element.&lt;/p&gt;</p>
+        <p>Some tags, like the image tag or the line break tag, don't need content and do not have a separate closing tag. They are a complete element by themselves.</p>
+        <p class="example">&lt;img&gt;, &lt;br&gt;</p>
     </section>
+
     <!--attributes-->
     <section id="attributes-section">
         <h4>Attributes</h4>
+        <p>Attributes provide extra information about an element. They are always placed inside the opening tag and are defined as name/value pairs.</p>
+        <ul>
+            <li><strong>Structure:</strong> name="value"</li>
+            <li><strong>Purpose:</strong> Attributes modify the element or provide necessary details the browser needs to process it.</li>
+        </ul>
+        <p>Example 1 (Styling): The class attribute assigns a name for styling with CSS.</p>
+        <p class="example">&lt;h1 class="main-title"&gt;My Heading&lt;/h1&gt;</p>
+        <p>Example 2 (Functionality): The src attribute is essential for the img tag, telling the browser the source (location) of the image file.</p>
+        <p class="example">&lt;img src="picture.jpg" alt="A descriptive label"&gt;</p>
+        <p>Here, src and alt are the attribute names, and "picture.jpg" and "A descriptive label" are their values.</p>
     </section>
     </main>
 
-    <footer>
-        <p>By <a href="../kstocksdesigns.com/index.html">K. Stocks Designs</a> © 2025</p>
-    </footer>
     
+    <div data-include="../project/components/footer.html"></div>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>   
+    
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
