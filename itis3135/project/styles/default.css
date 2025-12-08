@@ -9,6 +9,7 @@ header {
     margin: 0 auto;
     max-width: 800px;
     width:80%;
+    
 
 }
 main{
@@ -16,27 +17,63 @@ main{
 }
 
 h1{
-    color:aliceblue;
+    color:black;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    background-color: #D6FFFD;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+h1 img{
+    width:10%;
+    height:10%;
+}
+
+.header{
+    font-size: 2rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #0E0E52;
+    text-align: center;
+    font-size: 30px;
 }
 
 h3{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0E0E52;
+    font-size: 20px;
 }
 
 h4{
     color: #30212D;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
 }
 
 nav{
     color:#69BADD;
     text-align:center;
+    padding-top: 15px;
+}
+
+figure{
+    text-align: center;
+    padding-top:5px;
+
+}
+
+figcaption{
+    text-align: center;
+    font-style: italic;
+    overflow-wrap: break-word;
 }
 
 p{
@@ -122,6 +159,7 @@ img{
 }
 button{
     padding: 5px;
+    margin-top: 10px;
     background-color: #D0EAF6;
     color: #0E0E52;
     border: 1px solid black;
@@ -132,6 +170,11 @@ button:hover{
     color: white;
     background-color: #0E0E52;
 
+}
+
+summary{
+    color: #30212D;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 footer {

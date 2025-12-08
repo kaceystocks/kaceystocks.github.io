@@ -13,15 +13,8 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 </head>
 <body>
-    <header>
-        <h1>Web Basics Interactive</h1>
-        <nav>
-            <a href="index.html">Home</a> ||
-            <a href="htmlbasics.html">HTML Basics</a> ||
-            <a href="css.html">CSS Styling</a> ||
-            <a href="javascript.html">JavaScript Fundamentals</a> ||
-            <a href="interactive.html">Interactive Project</a>
-        </nav>
+    <!--put compenent header here-->
+    <div data-include="components/header.html"></div>
         <br>
         <nav>
             <a href="#selectors-section">Selectors</a> -
@@ -29,19 +22,14 @@
             <a href="#box-model-section">Box Model</a> 
         </nav>
 
-    </header>
 
     <main>
         <section>
             <h2>CSS Styling</h2>
             <h3>🎨 Styling the Web</h3>
             <p><strong>What is CSS?</strong> CSS (Cascading Style Sheets) is the "skin" or stylist for your HTML structure. It controls the visual appearance of your content—things like colors, fonts, layouts, and spacing. CSS separates presentation from structure, making your code cleaner and easier to manage.</p>
-            <h4>Selectors and Declarations</h4>
-            <p><strong>Selectors: </strong>is a pattern used to select, or target, the HTML elements to which a set of CSS declarations (styles) will be applied. It identifies which specific elements on a web page should receive the defined styling.</p>
-            <p><strong>Declarations: </strong>defines a specific style to be applied to an HTML element. It consists of a property and a value, separated by a colon, and terminated by a semicolon.</p>
-
+            <p class="example">selector { declaration }</p>
         </section>
-
         <section id="selectors-section">
             <h4>Selectors</h4>
             <div id="demo-box" style="font-size: 16px; margin: 20px; padding: 10px; border: 1px solid #333;">
@@ -50,23 +38,85 @@
             <p>Current Font Size: <span id="font-size-value">16</span>px</p>
             <div id="font-size-slider" style="width: 80%;"></div>
             <p>A Selector is the part of the CSS rule that identifies which HTML element(s) the rules should apply to. It's how you target specific tags, classes, or IDs.</p>
+            <table>
+                <tr>
+                    <th>Selector Type</th>
+                    <th>Example</th>
+                    <th>What it Targets</th>
+                    <th>Explanation</th>
+                </tr>
+                <tr>
+                    <td>Element/Type</td>
+                    <td>p</td>
+                    <td>All &lt;p&gt; tags</td>
+                    <td>Selects all instances of a specific HTML tag.</td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td>.warning</td>
+                    <td>All elements with class="warning"</td>
+                    <td>Allows you to apply the same style to many different elements across the page.</td>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>#header</td>
+                    <td>The single element with id="header".</td>
+                    <td>IDs must be unique on a page, making this the most specific type of selector.</td>
+                </tr>
+                <tr>
+                    <td>Universal</td>
+                    <td>*</td>
+                    <td>Every element on the page.</td>
+                    <td>Selects everything. Often used for resetting styles.</td>
+                </tr>
+                
+            </table>
         </section>
         <section id="declarations-section">
             <h4>Declarations</h4>
+            <p>A CSS declaration is the core component that defines how a specific style rule should be applied to an HTML element. It's the part that tells the browser what change to make and how to make it.</p>
+            
+                <p><strong>Property</strong></p>
+                <p>The Property is the human-readable identifier that tells the browser what characteristic of the element you want to change.</p>
+                <details>
+                    <summary>Examples:</summary>
+                    <p class="example">color: Changes the text color.</p>
+                    <p class="example">font-size: Changes the size of the text.</p>
+                    <p class="example">margin: Controls the spacing outside the element's border.</p>
+                </details>
+                
+                <p><strong>Value</strong></p>
+                <p>The Value is the specific setting or configuration you want to apply to the property. It tells the browser how to apply the change.</p>
+                <details>
+                    <summary>Examples:</summary>
+                    <p class="example">blue (for the color property).</p>
+                    <p class="example">10px 20px (for the font-size property).</p>
+                    <p class="example">10px or 30% (for the margin property).</p>
+                </details>
+            
         </section>
         <section id="box-model-section">
             <h4>Box Model</h4>
             <figure>
                 <img src="images/boxmodelpic.jpg" alt="box-model pic" >
+                <figcaption>Diagram of box model</figcaption>
             </figure>
-            
+            <p>Every element on a web page is treated as a box composed of four distinct layers:</p>
+            <ul>
+                <li><strong>Content:</strong> This is the innermost part of the box, containing the actual text, images, or other media. Its size is determined by the element's width and height properties.</li>
+                <li><strong>Padding:</strong> This is the transparent space that immediately surrounds the content. It acts as a buffer zone between the content and the border.</li>
+                <li><strong>Border:</strong> This is a line that wraps around the padding and the content. It is the visible edge of the box.</li>
+                <li><strong>Margin:</strong> This is the outermost transparent space that surrounds the border. It is used to create space between the current box and other adjacent boxes on the page.</li>
+            </ul>
         </section>
 
     </main>
 
-    <footer>
-        <p>By <a href="../kstocksdesigns.com/index.html">K. Stocks Designs</a> © 2025</p>
-    </footer>
     <script src="scripts/scripts.js"></script>
+    <!--put component footer here-->
+    <div data-include="components/footer.html"></div>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>   
+    
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
